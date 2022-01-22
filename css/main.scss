@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+:root{
+    --primary-color: #28054d;
+}
+
+html{
+    background-color: black;
+    height: 540px;
+    
+}
+body {
+    
+    width: 1200px;
+    height: fit-content;
+    background: #7b00ff;
+    color: white;
+    font-family: 'Luxurious Roman', cursive;
+    margin:0 auto;
+}
+canvas { 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: -10; 
+}
+
+
+.navbar {
+    background: var(--primary-color);
+    padding: 1em;
+
+    a {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: white;
+        text-decoration: none;
+    }
+    .container {
+        display: flex;
+        place-content: space-between;
+        
+    }
+}
+
+section{
+    padding: 1em 1em;
+    
+}
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    //place-content: space-evenly;
+    justify-content: center;
+    .right-col{
+        ul{
+            list-style-type: none;
+            display: inline-flex;
+        }
+        li.b{
+            padding-top: 100px;
+        }
+        
+    }
+    
+    .about-me{
+        width: 400px;
+        border-left: 1px solid white;
+        
+        height:fit-content;
+        h1{
+            padding-left: 1em;
+        }
+        p{
+            padding-left: 1em;
+        }
+    }
+    
+}
+.projects {
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: left;
+        align-content: left;
+        margin: -10px -50px;
+    }
+    
+    li{
+        width:500px;
+        height:450px;
+        //display: block;
+        flex: 0 1 auto;
+        flex-direction: column;
+        text-align: left;
+        list-style-type: none;
+    }
+}

@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
+:root {
+  --primary-color: #28054d;
+}
+
+html, body {
+  background-color: #abcdef;
+}
+
+html {
+  background-color: black;
+  height: 540px;
+}
+
+body {
+  width: 1200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #7b00ff;
+  color: white;
+  font-family: 'Luxurious Roman', cursive;
+  margin: 0 auto;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.navbar {
+  background: var(--primary-color);
+  padding: 1em;
+}
+
+.navbar a {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+section {
+  padding: 1em 1em;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .right-col ul {
+  list-style-type: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.hero .right-col li.b {
+  padding-top: 100px;
+}
+
+.hero .about-me {
+  width: 400px;
+  border-left: 1px solid white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.hero .about-me h1 {
+  padding-left: 1em;
+}
+
+.hero .about-me p {
+  padding-left: 1em;
+}
+
+.projects ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -ms-flex-line-pack: left;
+      align-content: left;
+  margin: -10px -50px;
+}
+
+.projects li {
+  width: 500px;
+  height: 450px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  list-style-type: none;
+}
+/*# sourceMappingURL=main.css.map */
